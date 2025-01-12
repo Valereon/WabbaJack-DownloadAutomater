@@ -10,11 +10,9 @@ print("Please open the download window")
 time.sleep(5)
 
 
-timesNotFound = 0
 
 
-
-while timesNotFound < 10:
+while True:
     downloadButton = pyautogui.locateCenterOnScreen('download.png')
     while(downloadButton is None):
         downloadButton = pyautogui.locateCenterOnScreen('download.png')
